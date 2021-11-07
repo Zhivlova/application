@@ -8,9 +8,9 @@ from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, 
 from server import process_client_message
 
 class TestServer(unittest.TestCase):
-    '''
+    """
     В сервере только 1 функция для тестирования
-    '''
+    """
     err_dict = {
         RESPONSE: 400,
         ERROR: 'Bad Request'

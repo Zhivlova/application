@@ -10,14 +10,17 @@ from errors import IncorrectDataRecivedError
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, \
     RESPONSE, DEFAULT_PORT, MAX_CONNECTIONS, ERROR
 from common.utils import get_message, send_message
+from decos import log
+
 
 # Инициализация логирования сервера.
 SERVER_LOGGER = logging.getLogger('server')
 
 
+@log
 def process_client_message(message):
     """
-    Обработчик сообщений от клиентов, принимает словарь - сообщение от клинта,
+    Обработчик сообщений от клиентов, принимает словарь - сообщение от клиента,
     проверяет корректность, возвращает словарь-ответ для клиента
     :param message:
     :return:
@@ -32,6 +35,7 @@ def process_client_message(message):
     }
 
 
+@log
 def create_arg_parser():
     """
     Парсер аргументов коммандной строки
