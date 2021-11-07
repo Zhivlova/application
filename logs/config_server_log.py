@@ -7,7 +7,7 @@ import logging.handlers
 sys.path.append(os.path.join(os.getcwd(), '..'))
 sys.path.append('../')
 from common.variables import LOGGING_LEVEL
-
+import decos
 
 # создаём формировщик логов (formatter):
 SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)s %(filename)s %(message)s')
