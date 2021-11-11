@@ -9,11 +9,11 @@ from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, 
 from common.utils import get_message, send_message
 
 class TestSocket:
-    '''
+    """
     Тестовый класс для тестирования отправки и получения,
     при создании требует словарь, который будет прогонятся
     через тестовую функцию
-    '''
+    """
     def __init__(self, test_dict):
         self.test_dict = test_dict
         self.encoded_message = None
