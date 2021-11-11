@@ -19,5 +19,4 @@ def log(func):
                             f' функции {traceback.format_stack()[0].strip().split()[-1]}.'
                             f'вызов из функции {inspect.stack()[1][3]}')
         return result
-
-    return log_saving()
+    return log_saving
