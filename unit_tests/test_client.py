@@ -8,9 +8,9 @@ from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, 
 from client import create_presence, process_ans
 
 class TestClass(unittest.TestCase):
-    '''
+    """
     Класс с тестами
-    '''
+    """
 
     def test_def_presense(self):
         """Тест коректного запроса"""
