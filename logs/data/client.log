@@ -249,3 +249,7 @@
 2021-11-11 19:22:14,083 DEBUG decos.py Вызвана функция send_message с параметрами (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 49874), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1636647734.067654, 'user': {'account_name': 'Guest'}}), {}, Вызов из модуля common.utils. Вызов из функции main().вызов из функции main
 2021-11-11 19:22:14,067 ERROR client.py Не удалось декодировать полученную Json строку.
 2021-11-11 19:22:14,583 ERROR client.py Не удалось декодировать полученную Json строку.
+2021-11-12 23:44:29,086 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'sender': 'account_name', 'to': 'test1', 'time': 1636749869.086781, 'mess_text': 'hi'}
+2021-11-12 23:44:29,131 CRITICAL client.py Потеряно соединение с сервером.
+2021-11-14 20:15:18,506 DEBUG client.py Сформирован словарь сообщения: {'action': 'message', 'sender': 'account_name', 'to': 'test', 'time': 1636910118.5063202, 'mess_text': 'hi'}
+2021-11-14 20:15:18,567 CRITICAL client.py Потеряно соединение с сервером.
